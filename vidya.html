@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidya Consultancy - Digital Marketing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.vidyaconsultancy.com">Vidya Consultancy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Marketing
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">SEO</a></li>
+                <li><a class="dropdown-item" href="#">Social Ads</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="hero">
+        
+        <img 
+          src="http://googleusercontent.com/image_collection/image_retrieval/14817717861347659547" 
+          alt="Technical illustration of digital marketing concepts" 
+          class="hero-image"
+        />
+        <h1>Vidya Consultancy: Digital Marketing Experts</h1>
+        <p>We help your business grow online with **data-driven strategies**.</p>
+        <a href="#contact" class="btn">Start Your Project</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="about">
+        <h2>About Vidya Consultancy</h2>
+        <p>
+          As a dedicated **digital marketing firm**, Vidya Consultancy provides
+          customized solutions to help small and medium businesses thrive.
+          Our focus is on creating high-quality, targeted campaigns that deliver real results.
+        </p>
+      </section>
+
+      <section id="services" class="services">
+        <h2>Our Digital Marketing Services</h2>
+        <div class="service">
+          <h3>Web Design & Development</h3>
+          <p>
+            We create modern, fast, and responsive websites that are optimized
+            for both search engines and user experience.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Content Marketing & SEO</h3>
+          <p>We craft compelling content and use **SEO** techniques to improve your visibility in Google and other search engines.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Ready to Grow? Contact Us!</h2>
+        <form action="submit_form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">How can we help you?</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2023 Vidya Consultancy, a Digital Marketing Firm. | <a href="https://www.vidyaconsultancy.com" target="_blank">www.vidyaconsultancy.com</a></p>
+    </footer>
+  </body>
+</html>

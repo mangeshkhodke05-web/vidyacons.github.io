@@ -1,117 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vidya Consultancy - Digital Marketing</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://www.vidyaconsultancy.com">Vidya Consultancy</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Marketing
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">SEO</a></li>
-                <li><a class="dropdown-item" href="#">Social Ads</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidya Consultancy - Digital Marketing Solutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        b<!DOCTYPE html>
+<html lang="en">
+<body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f0f4f8; /* A soft, modern blue-gray */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Vidya Consultancy</a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <!-- Language Selector -->
+                <div class="relative inline-block text-left mr-4">
+                    <select id="language-switcher" class="bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md shadow-sm text-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out">
+                        <option value="en">English (EN)</option>
+                        <option value="hi">हिन्दी (HI)</option>
+                    </select>
+                </div>
+                
+                <a href="#services" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium" data-i18n="nav-services">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium" data-i18n="nav-about">About Us</a>
+                <a href="#contact" class="text-white bg-indigo-600 hover:bg-indigo-700 px-5 py-2 rounded-full font-semibold transition-colors duration-300 shadow-md" data-i18n="nav-quote">Get a Quote</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
         </div>
-      </div>
-    </nav>
-    <header class="header">
-      <div class="hero">
-        
-        <img 
-          src="http://googleusercontent.com/image_collection/image_retrieval/14817717861347659547" 
-          alt="Technical illustration of digital marketing concepts" 
-          class="hero-image"
-        />
-        <h1>Vidya Consultancy: Digital Marketing Experts</h1>
-        <p>We help your business grow online with **data-driven strategies**.</p>
-        <a href="#contact" class="btn">Start Your Project</a>
-      </div>
     </header>
 
-    <main>
-      <section class="about">
-        <h2>About Vidya Consultancy</h2>
-        <p>
-          As a dedicated **digital marketing firm**, Vidya Consultancy provides
-          customized solutions to help small and medium businesses thrive.
-          Our focus is on creating high-quality, targeted campaigns that deliver real results.
-        </p>
-      </section>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg p-4 fixed w-full z-40 top-16">
+        <nav class="flex flex-col space-y-4 text-center">
+            <a href="#services" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium" data-i18n="nav-services">Services</a>
+            <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium" data-i18n="nav-about">About Us</a>
+            <a href="#contact" class="text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full font-medium transition-colors duration-300 shadow-md" data-i18n="nav-quote">Get a Quote</a>
+        </nav>
+    </div>
 
-      <section id="services" class="services">
-        <h2>Our Digital Marketing Services</h2>
-        <div class="service">
-          <h3>Web Design & Development</h3>
-          <p>
-            We create modern, fast, and responsive websites that are optimized
-            for both search engines and user experience.
-          </p>
+    <!-- Hero Section with Image -->
+    <section class="hero-bg py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <!-- Text Content -->
+            <div class="md:w-1/2 md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight" data-i18n="hero-title">
+                    Unlock Your Brand's Full Potential
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-6 max-w-xl" data-i18n="hero-tagline">
+                    Vidya Consultancy offers comprehensive digital marketing solutions to help your business thrive in the online world.
+                </p>
+                <p class="text-gray-700 mb-8 font-semibold">
+                    Visit our website: <a href="http://www.vidyaconsultancy.com" target="_blank" class="text-indigo-600 hover:text-indigo-700 underline transition-colors duration-300">www.vidyaconsultancy.com</a>
+                </p>
+                <a href="#contact" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-indigo-700 transition-colors duration-300 shadow-xl transform hover:scale-105 inline-block" data-i18n="btn-start">
+                    Get Started Today
+                </a>
+            </div>
+            <!-- Image Placeholder -->
+            <div class="md:w-1/2 md:pl-12">
+                <!-- Placeholder for a relevant digital marketing image -->
+                <img src="https://placehold.co/600x400/5B64E8/FFFFFF?text=Digital+Strategy" alt="Digital Marketing Strategy Illustration" class="rounded-2xl shadow-2xl w-full h-auto object-cover border-4 border-white">
+            </div>
         </div>
-        <div class="service">
-          <h3>Content Marketing & SEO</h3>
-          <p>We craft compelling content and use **SEO** techniques to improve your visibility in Google and other search engines.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12" data-i18n="services-title">Our Digital Marketing Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: SEO -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md transform hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 bg-indigo-100 text-indigo-600 rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 text-center mb-2">Search Engine Optimization (SEO)</h3>
+                    <p class="text-gray-600 text-center text-sm">
+                        Boost your website's visibility on search engines like Google and attract organic, high-quality traffic.
+                    </p>
+                </div>
+                <!-- Service Card 2: Social Media Marketing -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md transform hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 bg-indigo-100 text-indigo-600 rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 text-center mb-2">Social Media Marketing</h3>
+                    <p class="text-gray-600 text-center text-sm">
+                        Build your brand presence, engage with your audience, and drive conversions across all major social platforms.
+                    </p>
+                </div>
+                <!-- Service Card 3: Content Marketing -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md transform hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 bg-indigo-100 text-indigo-600 rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.484 9.332 5 7.828 5 6.324 5 4.825 5.484 3.657 6.253L12 18V6.253zM12 6.253c1.168-.769 2.668-1.253 4.172-1.253 1.504 0 3.004.484 4.172 1.253L12 18V6.253z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 text-center mb-2">Content Marketing</h3>
+                    <p class="text-gray-600 text-center text-sm">
+                        Create valuable, relevant content that attracts, engages, and converts your target audience.
+                    </p>
+                </div>
+                <!-- Service Card 4: Pay-Per-Click (PPC) -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md transform hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 bg-indigo-100 text-indigo-600 rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c-1.657 0-3-.895-3-2s1.343-2 3-2 3 .895 3 2-1.343 2-3 2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 text-center mb-2">Pay-Per-Click (PPC)</h3>
+                    <p class="text-gray-600 text-center text-sm">
+                        Run highly targeted ad campaigns on Google, social media, and other platforms to generate immediate results.
+                    </p>
+                </div>
+                <!-- Service Card 5: Email Marketing -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md transform hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 bg-indigo-100 text-indigo-600 rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 text-center mb-2">Email Marketing</h3>
+                    <p class="text-gray-600 text-center text-sm">
+                        Nurture leads and build lasting customer relationships with targeted and engaging email campaigns.
+                    </p>
+                </div>
+                <!-- Service Card 6: Analytics & Reporting -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md transform hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center justify-center h-16 w-16 bg-indigo-100 text-indigo-600 rounded-full mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 4h6m-3-12v12m-3-4a2 2 0 012-2h2a2 2 0 012 2z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 text-center mb-2">Analytics & Reporting</h3>
+                    <p class="text-gray-600 text-center text-sm">
+                        Gain clear insights into your marketing performance with detailed reports and data-driven analysis.
+                    </p>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="contact" class="contact">
-        <h2>Ready to Grow? Contact Us!</h2>
-        <form action="submit_form.php" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">How can we help you?</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <button type="submit" class="btn">Send Inquiry</button>
-        </form>
-      </section>
-    </main>
+    <!-- Why Choose Us Section with Images -->
+    <section class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12" data-i18n="why-title">Why Choose Vidya Consultancy?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                
+                <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-[1.02] transition-transform duration-300 border-b-4 border-indigo-500">
+                    <!-- Image Placeholder 1: Expert Team -->
+                    <img src="https://placehold.co/100x100/3B82F6/FFFFFF?text=Team" alt="Expert Team Icon" class="mx-auto mb-4 w-24 h-24 rounded-full object-cover shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Expert Team</h3>
+                    <p class="text-gray-600 text-sm">Certified professionals with years of experience delivering top-tier digital results.</p>
+                </div>
 
-    <footer class="footer">
-      <p>&copy; 2023 Vidya Consultancy, a Digital Marketing Firm. | <a href="https://www.vidyaconsultancy.com" target="_blank">www.vidyaconsultancy.com</a></p>
+                <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-[1.02] transition-transform duration-300 border-b-4 border-indigo-500">
+                    <!-- Image Placeholder 2: Measurable Results -->
+                    <img src="https://placehold.co/100x100/10B981/FFFFFF?text=Results" alt="Measurable Results Icon" class="mx-auto mb-4 w-24 h-24 rounded-full object-cover shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Measurable Results</h3>
+                    <p class="text-gray-600 text-sm">We focus on clear KPIs to ensure your marketing spend is driving real ROI.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow-md transform hover:scale-[1.02] transition-transform duration-300 border-b-4 border-indigo-500">
+                    <!-- Image Placeholder 3: Client Focus -->
+                    <img src="https://placehold.co/100x100/F59E0B/FFFFFF?text=Focus" alt="Client Focus Icon" class="mx-auto mb-4 w-24 h-24 rounded-full object-cover shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Client Focus</h3>
+                    <p class="text-gray-600 text-sm">A dedicated consultant ensures a personalized strategy tailored to your business needs.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" data-i18n="about-title">About Vidya Consultancy</h2>
+            <p class="text-lg text-gray-600 mb-8" data-i18n="about-body">
+                Vidya Consultancy is a dedicated digital marketing company passionate about helping businesses of all sizes succeed online. We believe in a collaborative approach, working closely with our clients to understand their unique goals and craft strategies that deliver real, measurable results. Our expertise spans across all key digital channels, ensuring a cohesive and powerful online presence for your brand.
+            </p>
+            <div class="bg-indigo-50 p-6 rounded-xl shadow-inner inline-block">
+                <h3 class="text-xl font-bold text-indigo-700 mb-2" data-i18n="contact-us-title">Contact Us</h3>
+                <p class="text-lg text-gray-700">
+                    Phone: <a href="tel:9730426292" class="text-indigo-600 font-bold hover:underline">9730426292</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contact" class="py-16 md:py-24 bg-indigo-600 text-center text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="cta-title">Ready to Grow Your Business?</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                Let's discuss how a tailored digital marketing strategy can help you achieve your business objectives.
+            </p>
+            <a href="tel:9730426292" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-xl transform hover:scale-105 inline-block" data-i18n="btn-call">
+                Call Now to Start
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Vidya Consultancy. <span data-i18n="footer-text">All rights reserved.</span></p>
+        </div>
     </footer>
-  </body>
+
+    <script>
+        // === I18N (INTERNATIONALIZATION) LOGIC ===
+        const translations = {
+            'en': {
+                'nav-services': 'Services',
+                'nav-about': 'About Us',
+                'nav-quote': 'Get a Quote',
+                'hero-title': 'Unlock Your Brand\'s Full Potential',
+                'hero-tagline': 'Vidya Consultancy offers comprehensive digital marketing solutions to help your business thrive in the online world.',
+                'btn-start': 'Get Started Today',
+                'services-title': 'Our Digital Marketing Services',
+                'why-title': 'Why Choose Vidya Consultancy?',
+                'about-title': 'About Vidya Consultancy',
+                'about-body': 'Vidya Consultancy is a dedicated digital marketing company passionate about helping businesses of all sizes succeed online. We believe in a collaborative approach, working closely with our clients to understand their unique goals and craft strategies that deliver real, measurable results. Our expertise spans across all key digital channels, ensuring a cohesive and powerful online presence for your brand.',
+                'contact-us-title': 'Contact Us',
+                'cta-title': 'Ready to Grow Your Business?',
+                'btn-call': 'Call Now to Start',
+                'footer-text': 'All rights reserved.'
+            },
+            'hi': {
+                'nav-services': 'सेवाएं',
+                'nav-about': 'हमारे बारे में',
+                'nav-quote': 'कोट प्राप्त करें',
+                'hero-title': 'अपने ब्रांड की पूरी क्षमता को अनलॉक करें',
+                'hero-tagline': 'विद्या कंसल्टेंसी ऑनलाइन दुनिया में आपके व्यवसाय को फलने-फूलने में मदद करने के लिए व्यापक डिजिटल मार्केटिंग समाधान प्रदान करती है।',
+                'btn-start': 'आज ही शुरू करें',
+                'services-title': 'हमारी डिजिटल मार्केटिंग सेवाएं',
+                'why-title': 'विद्या कंसल्टेंसी क्यों चुनें?',
+                'about-title': 'विद्या कंसल्टेंसी के बारे में',
+                'about-body': 'विद्या कंसल्टेंसी एक समर्पित डिजिटल मार्केटिंग कंपनी है जो सभी आकार के व्यवसायों को ऑनलाइन सफल होने में मदद करने के लिए उत्सुक है। हम एक सहयोगात्मक दृष्टिकोण में विश्वास करते हैं, अपने ग्राहकों के साथ मिलकर उनके अद्वितीय लक्ष्यों को समझते हैं और वास्तविक, मापने योग्य परिणाम देने वाली रणनीतियों को तैयार करते हैं। हमारी विशेषज्ञता सभी प्रमुख डिजिटल चैनलों तक फैली हुई है।',
+                'contact-us-title': 'हमसे संपर्क करें',
+                'cta-title': 'अपना व्यवसाय बढ़ाने के लिए तैयार हैं?',
+                'btn-call': 'शुरू करने के लिए अभी कॉल करें',
+                'footer-text': 'सभी अधिकार सुरक्षित।'
+            }
+        };
+
+        function setLanguage(lang) {
+            // Loop through all keys in the selected language
+            Object.keys(translations[lang]).forEach(key => {
+                // Find all elements that have the data-i18n attribute matching the key
+                document.querySelectorAll(`[data-i18n="${key}"]`).forEach(element => {
+                    element.textContent = translations[lang][key];
+                });
+            });
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+        }
+
+        // === INITIALIZATION & EVENT LISTENERS ===
+
+        // 1. Language switcher functionality
+        const languageSwitcher = document.getElementById('language-switcher');
+        if (languageSwitcher) {
+            languageSwitcher.addEventListener('change', (event) => {
+                setLanguage(event.target.value);
+            });
+            // Set initial language on load (default to English)
+            setLanguage(languageSwitcher.value || 'en');
+        }
+
+        // 2. Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu after clicking
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // 3. Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
 </html>
+
+
